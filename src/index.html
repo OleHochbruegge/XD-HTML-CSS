@@ -152,45 +152,47 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-      
-    </div>
-      <!-- Area Chart Example-->
+
+      <!-- Card-->
       <div class="card mb-3">
+        <div class="container">
+    <form name="todo-list" id="add-todo-form" onsubmit="return validateForm()" method="post" required>
+      <input type="text" name="title" placeholder="Add Task">
+      <button class="waves-effect waves-light btn">Add</button>
+    </form>
 
-      </div>
-      <div class="row">
-        <div class="col-lg-8">
-          <!-- Example Bar Chart Card-->
-          <div class="card mb-3">
-            
-          </div>
-          </div>
-            </div>
-            <!-- Example Social Card-->
-            <div class="card mb-3">
-              
-            </div>
-            </div>
-            <!-- Example Social Card-->
-            <div class="card mb-3">
-              
-            </div>
-            <!-- Example Social Card-->
-            <div class="card mb-3">
+      <ul class="collection" id="todo-list">
 
-            </div>
-          </div>
-          <!-- /Card Columns-->
-        </div>
-          <!-- Example Notifications Card-->
-          <div class="card mb-3">
-          
-          </div>
-        </div>
-      </div>
+        <!-- <li class="collection-item"><div>
+          <span>Buying Food</span>
+          <i class="material-icons secondary-content">delete</i>
+          <a href="#modal1" class="modal-trigger secondary-content">
+            <i class="material-icons">edit</i>
+          </a>
+        </div></li> -->
+
+      </ul>
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <input type="text" name="newtitle" placeholder="Update Task">
     </div>
+    <div class="modal-footer">
+      <a href="#!" id="update" class="modal-close waves-effect waves-green btn-flat">Update</a>
+    </div>
+  </div>
+  </div>
+      </div>
     <!-- /.container-fluid-->
-    <!-- /.content-wrapper-->
+    </div>
+      <!-- Card-->
+        <div class="card mb-3">
+
+        </div>
+      <!-- /.content-wrapper-->
+      </div>
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
