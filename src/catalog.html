@@ -13,12 +13,6 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/css/dataTables.bootstrap4.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel='stylesheet'
-    href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="./style.css">
-
   <link rel="shortcut icon"
     href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe1eoXaWbHlCkyoYYVom1FAy9qs7vlWrD2Hg&usqp=CAU"
     type="image/x-icon">
@@ -63,21 +57,6 @@
               <i class="fa fa-fw fa-table"></i>
               <span class="nav-link-text">Tables</span>
             </a>
-          </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents"
-              data-parent="#exampleAccordion">
-              <i class="fa fa-fw fa-wrench"></i>
-              <span class="nav-link-text">Components</span>
-            </a>
-            <ul class="sidenav-second-level collapse" id="collapseComponents">
-              <li>
-                <a href="navbar.html">Navbar</a>
-              </li>
-              <li>
-                <a href="cards.html">Cards</a>
-              </li>
-            </ul>
           </li>
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
             <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
@@ -149,62 +128,29 @@
                 </span>
               </div>
             </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+              <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+          </li>
         </ul>
       </div>
     </nav>
     <div class="content-wrapper">
       <div class="container-fluid">
-        <div class="rerun"><a href="">Rerun Pen</a></div>
         <div class="container">
-          <div class="card"></div>
-          <div class="card">
-            <h1 class="title">Login</h1>
-            <form>
-              <div class="input-container">
-                <input type="#{type}" id="#{label}" required="required" />
-                <label for="#{label}">Username</label>
-                <div class="bar"></div>
-              </div>
-              <div class="input-container">
-                <input type="#{type}" id="#{label}" required="required" />
-                <label for="#{label}">Password</label>
-                <div class="bar"></div>
-              </div>
-              <div class="button-container">
-                <button><span>Go</span></button>
-              </div>
-              <div class="footer"><a href="#">Forgot your password?</a></div>
-            </form>
-          </div>
-          <div class="card alt">
-            <div class="toggle"></div>
-            <h1 class="title">Register
-              <div class="close"></div>
-            </h1>
-            <form>
-              <div class="input-container">
-                <input type="#{type}" id="#{label}" required="required" />
-                <label for="#{label}">Username</label>
-                <div class="bar"></div>
-              </div>
-              <div class="input-container">
-                <input type="#{type}" id="#{label}" required="required" />
-                <label for="#{label}">Password</label>
-                <div class="bar"></div>
-              </div>
-              <div class="input-container">
-                <input type="#{type}" id="#{label}" required="required" />
-                <label for="#{label}">Repeat Password</label>
-                <div class="bar"></div>
-              </div>
-              <div class="button-container">
-                <button><span>Next</span></button>
-              </div>
-            </form>
-          </div>
-        </div>
+
+
+
+
+
+
+
+        <!-- /.container-fluid-->
       </div>
+      <!-- /.content-wrapper-->
     </div>
+
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
@@ -216,6 +162,26 @@
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
     </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
   </body>
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
@@ -224,7 +190,6 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/dataTables.bootstrap4.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src="./script.js"></script>
 
 </body>
