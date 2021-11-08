@@ -139,32 +139,16 @@
     <div class="content-wrapper">
       <div class="container-fluid">
         <div class="container">
-          <form name="todo-list" id="add-todo-form" onsubmit="return validateForm()" method="post" required>
-            <input type="text" name="title" placeholder="Add Task">
-            <button class="waves-effect waves-light btn">Add</button>
-          </form>
+         
+          
 
-          <ul class="collection" id="todo-list">
 
-            <!-- <li class="collection-item"><div>
-          <span>Buying Food</span>
-          <i class="material-icons secondary-content">delete</i>
-          <a href="#modal1" class="modal-trigger secondary-content">
-            <i class="material-icons">edit</i>
-          </a>
-        </div></li> -->
 
-          </ul>
 
-          <!-- Modal Structure -->
-          <div id="modal1" class="modal">
-            <div class="modal-content">
-              <input type="text" name="newtitle" placeholder="Update Task">
-            </div>
-            <div class="modal-footer">
-              <a href="#!" id="update" class="modal-close waves-effect waves-green btn-flat">Update</a>
-            </div>
-          </div>
+
+
+
+
         </div>
         <!-- /.container-fluid-->
       </div>
@@ -204,6 +188,8 @@
     </div>
   </body>
   <!-- partial -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js'></script>
   <script src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js'></script>

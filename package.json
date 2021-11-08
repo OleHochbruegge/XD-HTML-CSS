@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/OleHochbruegge/XD-HTML-CSS/issues"
   },
-  "homepage": "https://github.com/OleHochbruegge/XD-HTML-CSS#readme"
+  "homepage": "https://github.com/OleHochbruegge/XD-HTML-CSS#readme",
+  "dependencies": {
+    "firebase": "^9.4.0"
+  }
 }
