@@ -13,6 +13,24 @@ $('.close').on('click', function() {
 
 
 
+$(function () {
+  $(".cards_text").addClass("card_text_line_clamp");
+
+  $(".cards_item").mouseover(function () {
+    $(".cards_text").removeClass("card_text_line_clamp");
+  });
+
+  $(".cards_item").mouseleave(function () {
+    $(".cards_text").addClass("card_text_line_clamp");
+  });
+});
+
+
+
+
+
+
+
 
 
 
